@@ -1,0 +1,171 @@
+.header {
+  background-color: var(--backgroundColor-3);
+  padding: var(--padding-s);
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  color: var(--color-1);
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: ease-in-out 0.5s;
+}
+
+.logo {
+  width: 40px;
+  cursor: pointer;
+}
+#toggle {
+  display: none;
+}
+
+.header-nav {
+  display: flex;
+  width: 80%;
+}
+
+.header-nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: var(--gap-m);
+  z-index: 10;
+}
+
+.nav-li a {
+  color: var(--color-1);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 300;
+  font-size: 14px;
+}
+.nav-li a:hover {
+  color: var(--color-2);
+}
+.oculto {
+  top: calc(-6svh - var(--padding-m));
+}
+
+header .fa-solid,
+header .fa-brands {
+  color: var(--color-2);
+  font-size: 12px;
+}
+header .fa-solid:hover,
+header .fa-brands:hover {
+  transform: scale(1.2);
+  color: var(--color-1);
+}
+
+.div-iconos ul {
+  display: flex;
+  gap: var(--gap-m);
+}
+
+@media (max-width: 820px) {
+  main {
+    margin: 0svh 0;
+  }
+  .header {
+    height: 50px;
+    transition: none;
+    justify-content: space-around;
+    gap: 50px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .logo {
+    width: 30px;
+  }
+  #toggle {
+    width: 30px;
+    display: flex;
+    background-color: var(--backgroundColor-3);
+    border-radius: 50%;
+    padding: var(--padding-s);
+  }
+  .header-nav {
+    position: absolute;
+    width: 230px;
+    right: 0;
+    top: calc(7svh);
+  }
+
+  .header-nav ul {
+    gap: var(--gap-s);
+    width: 300px;
+  }
+  .nav-ul {
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    right: -500px;
+    gap: 0;
+  }
+  .div-iconos {
+    position: absolute;
+    top: calc(80px + 295px);
+    right: 0px;
+    background-color: var(--backgroundColor-3);
+    height: 30px;
+    width: 300px;
+    right: -200%;
+    justify-content: center;
+  }
+  .div-iconos ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ul-iconos {
+    display: flex;
+    width: 100%;
+    gap: var(--gap-m);
+  }
+
+  .cerrado {
+    background-color: var(--backgroundColor-3);
+    position: fixed;
+    top: 50px;
+    right: 0%;
+    padding: var(--padding-l) 0;
+  }
+  .cerrado-iconos {
+    background-color: var(--backgroundColor-3);
+    position: fixed;
+    right: 0%;
+  }
+  .nav-li {
+    padding: var(--padding-s);
+  }
+  .nav-li a {
+    padding-left: var(--padding-m);
+  }
+  .nav-li a:hover {
+    color: var(--color-2);
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .header-nav ul {
+    width: 100%;
+  }
+  .div-iconos {
+    width: 100%;
+  }
+
+  .cerrado-iconos {
+    padding-bottom: 100svh;
+  }
+  header .fa-solid,
+  header .fa-brands {
+    font-size: 18px;
+  }
+}
