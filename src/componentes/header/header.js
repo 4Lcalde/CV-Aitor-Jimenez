@@ -62,12 +62,12 @@ export const headerContainer = () => {
   const iconostoggle = document.querySelector('.div-iconos')
 
   p.addEventListener('click', () => {
-    navtoggle.classList.toggle('cerrado')
-    iconostoggle.classList.toggle('cerrado-iconos')
+    navtoggle.classList.toggle('abierto')
+    iconostoggle.classList.toggle('abierto-iconos')
   })
   navtoggle.addEventListener('click', () => {
-    navtoggle.classList.toggle('cerrado')
-    iconostoggle.classList.toggle('cerrado-iconos')
+    navtoggle.classList.toggle('abierto')
+    iconostoggle.classList.toggle('abierto-iconos')
   })
 }
 
@@ -84,8 +84,8 @@ document.addEventListener('DOMContentLoaded', function () {
       headerElement.classList.remove('oculto')
     } else {
       headerElement.classList.add('oculto')
-      navUl.classList.remove('cerrado')
-      divIconos.classList.remove('cerrado-iconos')
+      navUl.classList.remove('abierto')
+      divIconos.classList.remove('abierto-iconos')
     }
 
     ubicacion = ubicacionActual

@@ -127,14 +127,14 @@ header .fa-brands:hover {
     gap: var(--gap-m);
   }
 
-  .cerrado {
+  .abierto {
     background-color: var(--backgroundColor-3);
     position: fixed;
     top: 50px;
     right: 0%;
     padding: var(--padding-l) 0;
   }
-  .cerrado-iconos {
+  .abierto-iconos {
     background-color: var(--backgroundColor-3);
     position: fixed;
     right: 0%;
